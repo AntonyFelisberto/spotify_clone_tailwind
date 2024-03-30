@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
-  purge:[],
   theme: {
     extend: {
       spacing:{
@@ -13,7 +12,7 @@ module.exports = {
         "purple-main":"#1ED760",
         "green-main":"1ED760"
       },
-      backgroundImage: theme => theme({
+      backgroundImage: theme => ({
         "spotify-theme": "url('/img/bursts.svg')",
         "spotify-theme-mobile": "url('/img/bursts-mobile.svg')",
       }),
